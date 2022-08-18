@@ -1,0 +1,10 @@
+.currencyItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 20px;
+  height: 62px;
+}
+.currencyItem:hover {
+  background-color: #eeeeee;
+}

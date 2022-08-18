@@ -1,0 +1,54 @@
+.cartOverlay {
+  position: absolute;
+  top: 80px;
+  max-height: 73vh;
+  overflow-y: scroll;
+  right: -30px;
+  width: 292px;
+  z-index: 0;
+  background-color: #ffffff;
+  padding: 32px 16.5px;
+  .header {
+    span {
+      font-weight: 700;
+    }
+  }
+  .productsInCart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 40px;
+  }
+  .totalCost {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+  .bigBtns {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    button {
+      width: 140px;
+      height: 43px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 120%;
+      cursor: pointer;
+    }
+    :first-child {
+      button {
+        color: #1d1f22;
+        background-color: #ffffff;
+        border: 1px solid #1d1f22;
+      }
+    }
+    :last-child {
+      border: none;
+      background-color: #5ece7b;
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.PLP {
+  margin-top: 160px;
+
+  h1 {
+    font-size: 42px;
+    line-height: 67.2px;
+    font-weight: 400;
+  }
+
+  .gridContainer {
+    display: grid;
+    margin-top: 60px;
+    gap: 60px;
+    text-align: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+}

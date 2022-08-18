@@ -1,0 +1,134 @@
+.productItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+  padding: 10px;
+  padding-bottom: 0;
+  width: 250px;
+  height: 100%;
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    .productName {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      :first-child {
+        font-weight: 600;
+      }
+      :last-child {
+        font-weight: 400;
+      }
+    }
+    .price {
+      font-weight: 700;
+    }
+    .attributes {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: flex-end;
+      .attributText {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        div {
+          text-align: center;
+        }
+        .text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          width: 45px;
+          font-size: 14px;
+          font-weight: 400;
+          border: 1px solid #1d1f22;
+          padding: 0 4px;
+          margin-top: 7px;
+        }
+      }
+      .attributSwatch {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        .swatchContainer {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          padding: 2px;
+          .swatch {
+            width: 24px;
+            height: 24px;
+            gap: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .photoBlock {
+    display: flex;
+    gap: 24px;
+    .changeCountProductBtns {
+      display: flex;
+      flex-direction: column;
+      font-size: 24px;
+      font-weight: 500;
+      div {
+        display: flex;
+        margin: auto 0;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+      }
+      .plus {
+        cursor: pointer;
+        border: 1px solid black;
+        position: absolute;
+        top: 10px;
+      }
+      .minus {
+        cursor: pointer;
+        border: 1px solid black;
+        position: absolute;
+        bottom: 10px;
+      }
+    }
+    .productPhoto {
+      position: relative;
+      margin: 0 auto;
+      img {
+        height: 100px;
+      }
+      .photoSwitches {
+        display: flex;
+        gap: 8px;
+        position: absolute;
+        margin: 16px;
+        bottom: 10px;
+        right: 0;
+        div {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          background: rgba(0, 0, 0, 0.73);
+        }
+        img {
+          width: 6px;
+          height: 12px;
+        }
+      }
+    }
+  }
+}

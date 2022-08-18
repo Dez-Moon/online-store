@@ -1,0 +1,44 @@
+.productItem {
+  display: flex;
+  position: relative;
+  .productInfo {
+    width: 136px;
+    .productCost {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .attributes {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .changeCountProductBtns {
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      margin: auto 0;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+    }
+    .plus {
+      cursor: pointer;
+      border: 1px solid black;
+      position: absolute;
+      top: 0;
+    }
+    .minus {
+      cursor: pointer;
+      border: 1px solid black;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .productPhoto {
+    width: 121px;
+    height: auto;
+    margin-left: 8px;
+  }
+}

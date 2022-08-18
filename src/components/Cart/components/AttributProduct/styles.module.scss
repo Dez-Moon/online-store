@@ -1,0 +1,36 @@
+.attributText {
+  display: flex;
+  gap: 8px;
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 53px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #1d1f22;
+    padding: 0 4px;
+    margin-top: 7px;
+  }
+  .selected {
+    background-color: #1d1f22;
+    color: #ffffff;
+  }
+}
+.attributSwatch {
+  display: flex;
+  gap: 8px;
+  .swatchContainer {
+    margin-top: 10px;
+    padding: 2px;
+    .swatch {
+      width: 32px;
+      height: 32px;
+      gap: 8px;
+    }
+  }
+  .selected {
+    border: 1px solid #5ece7b;
+  }
+}
